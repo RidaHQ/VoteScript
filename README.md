@@ -89,7 +89,15 @@ config/config.json
 
 ---
 
-### 3. Start Tor (IMPORTANT)
+### 3. Browser
+
+```bash
+FIREFOX MUST BE INSTALLED ON YOUR PC
+```
+
+---
+
+### 4. Start Tor (IMPORTANT)
 
 ⚠️ Tor is **NOT started via `start_tor.bat`**
 
@@ -106,7 +114,7 @@ python gui.py
 
 ---
 
-### 4. Run the bot
+### 5. Run the bot
 
 You can:
 
