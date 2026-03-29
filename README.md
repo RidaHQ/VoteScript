@@ -198,7 +198,8 @@ The GUI includes a **REAL-TIME VOTES** section:
 ### v4
 
 * Tor integration
-* Proxy & anonymity improvements
+* Anonymity improvements
+* Raw UI
 
 ### v5.0
 
