@@ -5,6 +5,11 @@ Sends votes to multiple configurable URLs, simulates realistic user behavior, an
 
 ---
 
+**The project is continuously being developed and improved, with new features, performance upgrades, and optimizations added regularly to ensure greater stability and flexibility.
+Any suggestions, ideas, or feature requests are welcome and appreciated.**
+
+---
+
 ## 🚀 Features
 
 * ✅ Multi-URL voting system
@@ -210,12 +215,6 @@ The GUI includes a **REAL-TIME VOTES** section:
 This project is intended for **educational and testing purposes only**.
 The author is not responsible for any misuse or violation of third-party terms of service.
 
----
-
-**The project is continuously being developed and improved, with new features, performance upgrades, and optimizations added regularly to ensure greater stability and flexibility.
-Any suggestions, ideas, or feature requests are welcome and appreciated.**
-
----
 
 ## 📜 License
 
