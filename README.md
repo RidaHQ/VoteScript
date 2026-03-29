@@ -136,7 +136,7 @@ python main.py
 
 The GUI includes a **Pre-Navigation** option:
 
-### 🔹 Enabled
+### 🔹 Enabled (RECOMMENDED)
 
 * Bot navigates randomly through URLs in `config.json` before voting
 * Simulates real user browsing behavior
