@@ -8,7 +8,7 @@ numpy==1.24.3
 customtkinter==5.2.2
 Pillow==10.1.0
 
-# WebDriver managers (for automatic driver management)
+# WebDriver managers (just for automatic driver management, not needed)
 webdriver-manager==4.0.1
 
 # Additional utilities
