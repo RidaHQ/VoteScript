@@ -195,7 +195,7 @@ The GUI includes a **REAL-TIME VOTES** section:
 * Introduced config system (`config.json`)
 * Modular architecture
 
-### v4
+### v4.0
 
 * Tor integration
 * Anonymity improvements
