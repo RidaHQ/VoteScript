@@ -1,7 +1,7 @@
 # 🗳️ VoteScript
 
-Automated bot for voting on FeatureUpvote.com.
-Sends votes to multiple configurable URLs, simulates realistic user behavior, and supports Tor-based anonymity.
+**Automated bot for voting on FeatureUpvote.com.
+Sends votes to multiple configurable URLs, simulates realistic user behavior, and supports Tor-based anonymity.**
 
 ---
 
