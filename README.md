@@ -13,6 +13,7 @@ Sends votes to multiple configurable URLs, simulates realistic user behavior, an
 * 🧠 Human-like behavior simulation
 * 🧩 Modular architecture (strategies, browser, core)
 * 🖥️ GUI with advanced controls
+* 📊 Real-time vote monitoring & control
 
 ---
 
@@ -106,7 +107,7 @@ FIREFOX MUST BE INSTALLED ON YOUR PC
 * Open the GUI:
 
 ```bash
-python gui.py
+pythonw gui.py
 ```
 
 * Click:
@@ -119,9 +120,11 @@ python gui.py
 You can:
 
 * Start from GUI (recommended)
+
   * Click:
-     👉 **"Start Bot"**
-* Or run (**NOT** recommended):
+    👉 **"Start Bot"**
+
+* Or run (**NOT recommended**):
 
 ```bash
 python main.py
@@ -144,6 +147,18 @@ The GUI includes a **Pre-Navigation** option:
 * Bot sends votes immediately
 * ⚡ Faster execution
 * ❌ Higher risk of being flagged and votes blocked
+
+---
+
+## 📊 Real-Time Votes Panel
+
+The GUI includes a **REAL-TIME VOTES** section:
+
+* Displays the **title of each target link**
+* Shows the **number of votes sent per link**
+* Allows enabling/disabling voting **individually for each URL**
+
+👉 This gives full control over the voting process while the bot is running.
 
 ---
 
@@ -185,6 +200,7 @@ The GUI includes a **Pre-Navigation** option:
 * Pre-navigation system
 * Human behavior simulation
 * GUI controls (Start Tor, settings)
+* Real-time vote monitoring system
 * Performance & stability improvements
 
 ---
