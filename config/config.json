@@ -1,0 +1,242 @@
+{
+    "version": "5.0",
+    
+    "target_urls": [
+        "https://www.example.com/vote",
+        "https://www.example.com/vote?option=1",
+        "https://www.example.com/vote?option=2",
+        "https://www.example.com/vote?option=3"
+    ],
+
+    "total_votes": 5000,
+    
+    "votes_per_ip": {
+        "min": 1,
+        "max": 1
+    },
+    
+    "geckodriver_path": "./driver/geckodriver/win64/v0.36.0/geckodriver.exe",
+    
+    "tor_proxy": "127.0.0.1:9050",
+    "tor_control_port": 9051,
+    
+    "limits": {
+        "max_votes_per_day": 999999,
+        "pause_min_between_votes": 2,
+        "pause_max_between_votes": 5,
+        "start_hour": 0,
+        "end_hour": 23,
+        "max_consecutive_blocks": 3
+    },
+    
+    "history": {
+        "active": true,
+        "sites": [
+            "https://www.google.com",
+            "https://www.reddit.com",
+            "https://www.reddit.com/r/news",
+            "https://stackoverflow.com",
+            "https://github.com",
+            "https://www.youtube.com",
+            "https://www.youtube.com/results?search_query=news",
+            "https://it.wikipedia.org",
+            "https://it.wikipedia.org",
+            "https://www.amazon.com",
+            "https://www.amazon.com/gp/bestsellers",
+            "https://www.ebay.com",
+            "https://www.ebay.com/deals",
+            "https://www.twitch.tv",
+            "https://www.twitch.tv/directory",
+            "https://www.instagram.com",
+            "https://www.instagram.com/explore",
+            "https://www.facebook.com",
+            "https://www.facebook.com/watch",
+            "https://www.tiktok.com",
+            "https://www.tiktok.com/foryou",
+            "https://www.netflix.com",
+            "https://www.netflix.com/browse",
+            "https://www.spotify.com",
+            "https://open.spotify.com",
+            "https://www.imdb.com",
+            "https://www.imdb.com/chart/top",
+            "https://www.repubblica.com",
+            "https://www.corriere.com",
+            "https://www.gazzetta.com",
+            "https://www.tuttosport.com",
+            "https://www.meteo.com",
+            "https://www.ilmeteo.com",
+            "https://www.subito.com",
+            "https://www.idealista.com",
+            "https://www.tripadvisor.com",
+            "https://www.zalando.com",
+            "https://www.decathlon.com",
+            "https://www.poste.com",
+            "https://www.unicredit.com",
+            "https://www.intesasanpaolo.com"
+        ],
+        "depth": {
+            "min": 3,
+            "max": 8
+        },
+        "time_per_site": {
+            "min": 3,
+            "max": 8
+        }
+    },
+    
+    "fingerprint": {
+        "user_agents": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:115.0) Gecko/20100101 Firefox/115.0",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:114.0) Gecko/20100101 Firefox/114.0",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:113.0) Gecko/20100101 Firefox/113.0",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        ],
+        "languages": [
+            "it-IT,it;q=0.9,en;q=0.8",
+            "en-US,en;q=0.9",
+            "en-GB,en;q=0.8",
+            "fr-FR,fr;q=0.9,en;q=0.8",
+            "de-DE,de;q=0.9,en;q=0.8",
+            "es-ES,es;q=0.9,en;q=0.8",
+            "pt-PT,pt;q=0.9,en;q=0.8"
+        ],
+        "resolutions": [
+            "1920,1080",
+            "1366,768",
+            "1536,864",
+            "1440,900",
+            "1280,720",
+            "1600,900",
+            "1680,1050",
+            "2560,1440"
+        ],
+        "timezones": [
+            "Europe/Rome",
+            "Europe/London",
+            "Europe/Paris",
+            "Europe/Berlin",
+            "Europe/Madrid",
+            "Europe/Amsterdam",
+            "America/New_York",
+            "America/Los_Angeles"
+        ],
+        "canvas_noise": true,
+        "webgl_noise": true,
+        "audio_noise": true,
+        "fonts": [
+            "Arial,Helvetica,sans-serif",
+            "Times New Roman,serif",
+            "Courier New,monospace",
+            "Verdana,Geneva,sans-serif",
+            "Georgia,serif",
+            "Comic Sans MS,cursive"
+        ],
+        "platforms": [
+            "Win32",
+            "Win64",
+            "MacIntel",
+            "Linux x86_64"
+        ],
+        "cores": [2, 4, 6, 8, 12, 16],
+        "ram": [4, 8, 16, 32, 64],
+        "touch_support": [false, true],
+        "do_not_track": [true, false, null],
+        "hardware_concurrency": [2, 4, 6, 8, 12],
+        "device_memory": [4, 8, 16, 32],
+        "max_touch_points": [0, 5, 10]
+    },
+    
+    "behavior": {
+        "scroll": true,
+        "mouse_movements": true,
+        "random_errors": true,
+        "mouse_tremor": true,
+        "hesitation": true,
+        "click_precision": {
+            "max_offset": 5,
+            "miss_click_probability": 0.03
+        },
+        "scroll_speed": {
+            "min": 0.3,
+            "max": 2.5
+        },
+        "reading_time": {
+            "min": 2,
+            "max": 15
+        }
+    },
+    
+    "geolocation": {
+        "active": true,
+        "profiles": [
+            {"country": "IT", "probability": 0.35, "language": "it-IT", "timezone": "Europe/Rome", "currency": "EUR"},
+            {"country": "DE", "probability": 0.15, "language": "de-DE", "timezone": "Europe/Berlin", "currency": "EUR"},
+            {"country": "FR", "probability": 0.15, "language": "fr-FR", "timezone": "Europe/Paris", "currency": "EUR"},
+            {"country": "GB", "probability": 0.15, "language": "en-GB", "timezone": "Europe/London", "currency": "GBP"},
+            {"country": "ES", "probability": 0.10, "language": "es-ES", "timezone": "Europe/Madrid", "currency": "EUR"},
+            {"country": "US", "probability": 0.10, "language": "en-US", "timezone": "America/New_York", "currency": "USD"}
+        ]
+    },
+    
+    "temporal_patterns": {
+        "allowed_days": [1, 2, 3, 4, 5, 6],
+        "time_slots": {
+            "morning": {"start": 8, "end": 11, "probability": 0.25},
+            "lunch": {"start": 12, "end": 14, "probability": 0.20},
+            "afternoon": {"start": 15, "end": 18, "probability": 0.30},
+            "evening": {"start": 20, "end": 23, "probability": 0.25}
+        },
+        "rest_days": [7],
+        "seasonal_variation": true
+    },
+    
+    "user_profiles": {
+        "active": true,
+        "types": [
+            {"name": "student", "probability": 0.25, "scroll_speed": "fast", "reading_time": "short"},
+            {"name": "worker", "probability": 0.35, "scroll_speed": "medium", "reading_time": "medium"},
+            {"name": "home", "probability": 0.20, "scroll_speed": "slow", "reading_time": "long"},
+            {"name": "browser", "probability": 0.20, "scroll_speed": "variable", "reading_time": "variable"}
+        ]
+    },
+    
+    "residential_proxies": {
+        "active": false,
+        "list": []
+    },
+    
+    "browser": {
+        "types": ["firefox", "chrome", "edge", "safari"],
+        "versions": {
+            "firefox": ["91.0", "102.0", "115.0", "120.0"],
+            "chrome": ["117.0", "118.0", "119.0", "120.0"],
+            "edge": ["117.0", "118.0", "119.0", "120.0"],
+            "safari": ["15.0", "16.0", "17.0"]
+        }
+    },
+    
+    "webgl": {
+        "vendors": [
+            "Google Inc. (Intel)",
+            "Mozilla",
+            "WebKit",
+            "Google Inc. (NVIDIA)",
+            "Google Inc. (AMD)",
+            "Microsoft"
+        ],
+        "renderers": [
+            "Intel Iris OpenGL Engine",
+            "ANGLE (Intel, Intel(R) UHD Graphics Direct3D11)",
+            "WebKit WebGL",
+            "NVIDIA Corporation"
+        ]
+    }
+}

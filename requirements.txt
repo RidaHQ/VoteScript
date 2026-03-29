@@ -1,0 +1,17 @@
+# Core dependencies
+selenium==4.15.0
+stem==1.8.2
+requests==2.31.0
+numpy==1.24.3
+
+# GUI framework
+customtkinter==5.2.2
+Pillow==10.1.0
+
+# WebDriver managers (for automatic driver management)
+webdriver-manager==4.0.1
+
+# Additional utilities
+psutil==5.9.6
+python-dateutil==2.8.2
+urllib3==2.1.0
