@@ -206,8 +206,6 @@ The GUI includes a **REAL-TIME VOTES** section:
 ---
 
 ## ⚠️ Disclaimer
-
----
 This project is intended for **educational and testing purposes only**.
 The author is not responsible for any misuse or violation of third-party terms of service.
 
