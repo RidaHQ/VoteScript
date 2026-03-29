@@ -175,17 +175,17 @@ The GUI includes a **REAL-TIME VOTES** section:
 
 ## 🧾 Versions
 
-### v1
+### v1.0
 
 * Basic voting script
 * Single URL support
 
-### v2
+### v2.0
 
 * Multi-URL support
 * Improved request system
 
-### v3
+### v3.0
 
 * Introduced config system (`config.json`)
 * Modular architecture
@@ -195,7 +195,7 @@ The GUI includes a **REAL-TIME VOTES** section:
 * Tor integration
 * Proxy & anonymity improvements
 
-### v5
+### v5.0
 
 * Advanced anti-detection strategies
 * Pre-navigation system
