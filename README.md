@@ -1,2 +1,193 @@
-# VoteScript
-Automated bot for voting on FeatureUpvote.com: sends votes to multiple configurable URLs, simulates user interactions, using Tor-based anonymity.
+# 🗳️ VoteScript
+
+Automated bot for voting on FeatureUpvote.com.
+Sends votes to multiple configurable URLs, simulates realistic user behavior, and supports Tor-based anonymity.
+
+---
+
+## 🚀 Features
+
+* ✅ Multi-URL voting system
+* 🔁 Configurable votes per target
+* 🌐 Tor integration (via GUI)
+* 🧠 Human-like behavior simulation
+* 🧩 Modular architecture (strategies, browser, core)
+* 🖥️ GUI with advanced controls
+
+---
+
+## 📁 Project Structure
+
+```bash
+VoteScript/
+│   gui.py
+│   main.py
+│   start_tor.bat
+│   requirements.txt
+│   LICENSE
+│   README.md
+│
+├── browser/           # Fingerprinting & human behavior simulation
+├── config/            # Configuration files
+├── core/              # Main logic (voting + Tor management)
+├── driver/            # WebDriver (GeckoDriver)
+├── strategies/        # Anti-block & timing strategies
+├── Tor/               # Embedded Tor client
+├── utils/             # Helpers & logging
+```
+
+---
+
+## ⚙️ Configuration
+
+All settings are managed in:
+
+```bash
+/config/config.json
+```
+
+### Example:
+
+```json
+{
+    "target_urls": [
+        "https://www.example.com/vote",
+        "https://www.example.com/vote?option=1",
+        "https://www.example.com/vote?option=2",
+        "https://www.example.com/vote?option=3"
+    ],
+    "total_votes": 5000
+}
+```
+
+---
+
+### 🔹 Parameters
+
+* **target_urls** → List of voting endpoints
+* **total_votes** → Number of votes sent **per URL**
+
+---
+
+## ▶️ Usage
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 2. Configure targets
+
+Edit:
+
+```bash
+config/config.json
+```
+
+---
+
+### 3. Start Tor (IMPORTANT)
+
+⚠️ Tor is **NOT started via `start_tor.bat`**
+
+👉 You must start Tor directly from the GUI:
+
+* Open the GUI:
+
+```bash
+python gui.py
+```
+
+* Click:
+  👉 **"Start Tor"**
+
+---
+
+### 4. Run the bot
+
+You can:
+
+* Start from GUI (recommended)
+  * Click:
+     👉 **"Start Bot"**
+* Or run (**NOT** recommended):
+
+```bash
+python main.py
+```
+
+---
+
+## 🧠 Pre-Navigation Mode (Anti-Detection)
+
+The GUI includes a **Pre-Navigation** option:
+
+### 🔹 Enabled
+
+* Bot navigates randomly through URLs in `config.json` before voting
+* Simulates real user browsing behavior
+* ✅ Lower chance of detection / vote blocking
+
+### 🔹 Disabled
+
+* Bot sends votes immediately
+* ⚡ Faster execution
+* ❌ Higher risk of being flagged and votes blocked
+
+---
+
+## 🧠 How It Works
+
+* Uses browser automation (GeckoDriver)
+* Simulates human-like interactions
+* Routes traffic through Tor
+* Applies anti-detection strategies
+* Handles blocking dynamically
+
+---
+
+## 🧾 Versions
+
+### v1
+
+* Basic voting script
+* Single URL support
+
+### v2
+
+* Multi-URL support
+* Improved request system
+
+### v3
+
+* Introduced config system (`config.json`)
+* Modular architecture
+
+### v4
+
+* Tor integration
+* Proxy & anonymity improvements
+
+### v5
+
+* Advanced anti-detection strategies
+* Pre-navigation system
+* Human behavior simulation
+* GUI controls (Start Tor, settings)
+* Performance & stability improvements
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for **educational and testing purposes only**.
+The author is not responsible for any misuse or violation of third-party terms of service.
+
+---
+
+## 📜 License
+
+MIT License © 2026
