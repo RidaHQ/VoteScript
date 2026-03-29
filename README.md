@@ -57,7 +57,7 @@ All settings are managed in:
         "https://www.example.com/vote?option=2",
         "https://www.example.com/vote?option=3"
     ],
-    "total_votes": xxxx,
+    "total_votes": 0,
 }
 ```
 
