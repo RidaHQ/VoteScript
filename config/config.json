@@ -8,7 +8,7 @@
         "https://www.example.com/vote?option=3"
     ],
 
-    "total_votes": xxxx,
+    "total_votes": 0000,
     
     "votes_per_ip": {
         "min": 1,
