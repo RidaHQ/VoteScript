@@ -10,8 +10,8 @@ Any suggestions, ideas, or feature requests are welcome and appreciated.**
 
 ## ⚠️ Disclaimer
 
--This project is intended for **educational and testing purposes only**.
--And i am NOT responsible for any misuse or violation of third-party terms of service.
+This project is intended for **educational and testing purposes only**.
+And i am NOT responsible for any misuse or violation of third-party terms of service.
 
 ---
 
