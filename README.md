@@ -158,7 +158,7 @@ The GUI includes a **Pre-Navigation** option:
 ### 🔹 Disabled
 
 * Bot sends votes immediately
-* ⚡ Faster execution
+* Faster execution
 * ❌ Higher risk of being flagged and votes blocked
 
 ---
