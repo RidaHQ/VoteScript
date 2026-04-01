@@ -10,6 +10,14 @@ Any suggestions, ideas, or feature requests are welcome and appreciated.**
 
 ---
 
+## ⚠️ Disclaimer
+This project is intended for **educational and testing purposes only**.
+The author is not responsible for any misuse or violation of third-party terms of service.
+
+---
+
+---
+
 ## 🚀 Features
 
 * ✅ Multi-URL voting system
@@ -209,14 +217,6 @@ The GUI includes a **REAL-TIME VOTES** section:
 * GUI controls (Start Tor, settings)
 * Real-time vote monitoring system
 * Performance & stability improvements
-
----
-
-## ⚠️ Disclaimer
-This project is intended for **educational and testing purposes only**.
-The author is not responsible for any misuse or violation of third-party terms of service.
-
----
 
 ## 📜 License
 
