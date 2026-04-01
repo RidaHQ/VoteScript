@@ -34,8 +34,12 @@ def load_config(path: str = None):
 def run_bot(config, stop_event=None, stats_callback=None, vote_callback=None, 
             block_callback=None, ip_callback=None, title_callback=None, pause_event=None,
             history_active=True, link_toggle_states=None):
-    total_votes = config['total_votes']
-    logger.info(f"Target: {total_votes} votes")
+    
+    total_ip_changes = config['total_votes']  # esempio: 5000
+    total_votes = len(config['target_urls']) * total_ip_changes  # esempio: 5000 * 5 = 25000
+    
+    logger.info(f"Target: {total_ip_changes} IP changes, {total_votes} total votes")
+    
     tester = TorManager(config['tor_proxy'], config['tor_control_port'])
     connected = False
     for attempt in range(10):
@@ -50,11 +54,14 @@ def run_bot(config, stop_event=None, stats_callback=None, vote_callback=None,
     if not connected:
         logger.error("Tor not working after 10 attempts")
         return
+    
     votes_done = 0
     ip_changes = 0
+    
     if stats_callback:
-        stats_callback(ip_changes, votes_done, total_votes, total_votes, tester.get_ip())
-    while ip_changes < total_votes:
+        stats_callback(ip_changes, votes_done, total_votes, total_ip_changes, tester.get_ip())
+    
+    while ip_changes < total_ip_changes:
         if stop_event and stop_event.is_set():
             logger.info("Stop requested, interrupting")
             break
@@ -64,11 +71,14 @@ def run_bot(config, stop_event=None, stats_callback=None, vote_callback=None,
             if stop_event and stop_event.is_set():
                 logger.info("Stop requested during pause")
                 return
+        
         ip_changes += 1
-        logger.info(f"IP CHANGE #{ip_changes}/{total_votes}")
+        logger.info(f"IP CHANGE #{ip_changes}/{total_ip_changes}")
         ip_before = tester.get_ip()
+        
         if stats_callback:
-            stats_callback(ip_changes, votes_done, total_votes, total_votes, ip_before)
+            stats_callback(ip_changes, votes_done, total_votes, total_ip_changes, ip_before)
+        
         voter = Voter(config)
         votes_this_ip = voter.vote_all_links(
             stop_event, vote_callback, block_callback, ip_callback, title_callback, 
@@ -76,11 +86,14 @@ def run_bot(config, stop_event=None, stats_callback=None, vote_callback=None,
         )
         votes_done += votes_this_ip
         ip_after = tester.get_ip()
+        
         logger.info(f"IP after: {ip_after}")
-        logger.info(f"Progress: {ip_changes}/{total_votes} changes - {votes_done} votes")
+        logger.info(f"Progress: {ip_changes}/{total_ip_changes} changes - {votes_done}/{total_votes} votes")
+        
         if stats_callback and ip_after:
-            stats_callback(ip_changes, votes_done, total_votes, total_votes, ip_after)
-        if ip_changes < total_votes and (not stop_event or not stop_event.is_set()):
+            stats_callback(ip_changes, votes_done, total_votes, total_ip_changes, ip_after)
+        
+        if ip_changes < total_ip_changes and (not stop_event or not stop_event.is_set()):
             pause = random.uniform(5, 10)
             logger.info(f"Pause {pause:.0f}s")
             for i in range(int(pause * 2)):
@@ -92,11 +105,13 @@ def run_bot(config, stop_event=None, stats_callback=None, vote_callback=None,
                     while pause_event.is_set():
                         time.sleep(0.5)
                 time.sleep(0.5)
+    
     logger.info(f"\nFINAL REPORT")
-    logger.info(f"Completed: {ip_changes}/{total_votes} changes")
-    logger.info(f"Total votes: {votes_done}")
+    logger.info(f"Completed: {ip_changes}/{total_ip_changes} changes")
+    logger.info(f"Total votes: {votes_done}/{total_votes}")
+    
     if stats_callback:
-        stats_callback(ip_changes, votes_done, total_votes, total_votes, ip_after if 'ip_after' in locals() else "N/A")
+        stats_callback(ip_changes, votes_done, total_votes, total_ip_changes, ip_after if 'ip_after' in locals() else "N/A")
 
 def run_bot_with_callback(config, stop_event, stats_callback, vote_callback=None, 
                           block_callback=None, ip_callback=None, title_callback=None, 
