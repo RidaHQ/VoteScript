@@ -3,6 +3,8 @@
 **Automated bot for voting on FeatureUpvote.com.
 Sends votes to multiple configurable URLs, simulates realistic user behavior, and supports Tor-based anonymity.**
 
+---
+
 **The project is continuously being developed and improved, with new features, performance upgrades, and optimizations added regularly to ensure greater stability and flexibility.
 Any suggestions, ideas, or feature requests are welcome and appreciated.**
 
